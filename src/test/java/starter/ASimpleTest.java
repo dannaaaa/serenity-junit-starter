@@ -1,7 +1,6 @@
-package starter.math;
+package starter;
 
 import net.serenitybdd.junit.runners.SerenityRunner;
-import net.thucydides.core.annotations.Narrative;
 import net.thucydides.core.annotations.Pending;
 import net.thucydides.core.annotations.Steps;
 import org.junit.Test;
@@ -9,8 +8,7 @@ import org.junit.runner.RunWith;
 import starter.steps.MathWizSteps;
 
 @RunWith(SerenityRunner.class)
-@Narrative(text={"Maths is important."})
-public class WhenAddingNumbers {
+public class ASimpleTest {
 
     @Steps
     MathWizSteps michael;
@@ -28,3 +26,4 @@ public class WhenAddingNumbers {
         michael.shouldHave(3);
     }
 }
+
